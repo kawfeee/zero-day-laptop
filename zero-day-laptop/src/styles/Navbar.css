@@ -107,7 +107,7 @@
 
 .navbar-search::placeholder {
   color: #888;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 /* --- ICONS --- */

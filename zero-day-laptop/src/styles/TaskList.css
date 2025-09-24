@@ -136,7 +136,7 @@
 
 .remarks-input::placeholder {
   color: #9ca3af;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 /* Responsive design */

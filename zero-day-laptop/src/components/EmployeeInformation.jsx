@@ -27,10 +27,10 @@ const EmployeeInformation = ({ readOnly = false }) => {
           <tbody>
             <tr className="table-row">
               <td>Amritanjan Kumar</td>
-              <td>Network Call & OAM Team\Call S/W Group</td>
+              <td>Network Call & OAM</td>
               <td>25504878</td>
               <td>Lead Engineer</td>
-              <td>s.dangare@partner.samsung.com</td>
+              <td>s.dangare@partner.sam</td>
               <td>05-Jun-2023</td>
               <td>05-Jun-2023</td>
               <td>
