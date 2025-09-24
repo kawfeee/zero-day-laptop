@@ -1,0 +1,133 @@
+.comment-sections {
+  background-color: #F9FAFB;
+  border-radius: 8px;
+  margin: 24px 32px;
+  padding: 24px 3px;
+}
+
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.comment-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.comment-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #101928;
+  margin: 0;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+}
+
+.comment-textarea {
+  width: 100%;
+  padding: 24px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+  background-color: #ffffff;
+  color: #374151;
+  outline: none;
+  transition: border-color 0.2s ease;
+  resize: none;
+  min-height: 90px;
+  box-sizing: border-box;
+}
+
+.comment-textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.comment-textarea::placeholder {
+  color: #000000;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.it-comment-textarea {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.user-comment-textarea {
+  background-color: #ffffff;
+}
+
+.char-counter {
+  font-size: 12px;
+  color: #6b7280;
+  text-align: right;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+}
+
+.submit-section {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.submit-button {
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+}
+
+.submit-button:hover {
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  /* box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3); */
+  /* transform: translateY(-1px); */
+}
+
+.submit-button:active {
+  transform: translateY(0);
+  /* box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2); */
+}
+
+.submit-icon {
+  width: 90px;
+  height: 38px;
+  display: block;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .comment-sections {
+    margin: 16px 8px;
+    padding: 16px 20px;
+  }
+  
+  .comment-container {
+    gap: 16px;
+  }
+  
+  .comment-title {
+    font-size: 14px;
+  }
+  
+  .comment-textarea {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+  
+  .submit-button {
+    padding: 0;
+    font-size: 13px;
+  }
+}

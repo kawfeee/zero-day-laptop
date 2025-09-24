@@ -1,0 +1,32 @@
+.main-content-section {
+  background-color: #F9FAFB;
+  border-radius: 8px;
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+  margin: 24px 32px;
+  overflow: hidden;
+}
+
+.content-placeholder {
+  padding: 24px 32px;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+}
+
+.content-placeholder:last-child {
+  border-bottom: none;
+}
+
+.content-placeholder h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #374151;
+  margin: 0 0 8px 0;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+}
+
+.content-placeholder p {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+}

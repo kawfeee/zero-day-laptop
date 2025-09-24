@@ -1,0 +1,110 @@
+.workflow-sections {
+  background-color: #F9FAFB;
+  border-radius: 8px;
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+  margin: 24px 0;
+  margin-left: 27px; /* align left edge */
+  width: 1392px;     /* requested width */
+  overflow: hidden;
+  opacity: 1;        /* requested opacity */
+}
+
+.workflow-item {
+  display: flex;
+  align-items: center;
+  height: 39px; /* requested row height */
+  padding: 0;   /* keep total height at 39px */
+  background-color: #EFF6FF;
+  /* border-bottom: 1px solid #e5e7eb; */
+  cursor: pointer;
+  transition: none;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+}
+
+.workflow-item:last-child {
+  border-bottom: none;
+}
+
+
+.view-policies {
+  border-radius: 0 0 8px 8px;
+  background-color: #F9FAFB;
+}
+
+/* Add spacing between transfer and view policies sections */
+.view-policies { margin-top: 43px; }
+
+.workflow-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  margin-left: 24px;
+  flex-shrink: 0;
+}
+
+.workflow-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.workflow-text {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+}
+
+.transfer-workflow .workflow-text {
+  font-weight: 700;
+}
+
+.view-policies .workflow-text {
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.workflow-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  margin-right: 24px;
+  flex-shrink: 0;
+}
+
+.workflow-arrow img {
+  width: 11px;
+  height: 19px;
+}
+
+.view-policies .workflow-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .workflow-sections {
+    margin: 16px 8px;
+  }
+  
+  .workflow-item {
+    padding: 12px 16px;
+  }
+  
+  .workflow-text {
+    font-size: 13px;
+  }
+  
+  .workflow-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .workflow-arrow svg {
+    width: 14px;
+    height: 14px;
+  }
+}

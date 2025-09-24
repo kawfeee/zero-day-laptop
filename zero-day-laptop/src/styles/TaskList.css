@@ -1,0 +1,178 @@
+.task-list {
+  background-color: #ffffff;
+  border-radius: 8px;
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+  margin: 24px 32px;
+  overflow: hidden;
+}
+
+.task-list-header {
+  background-color: #f8fafc;
+  padding: 20px 3px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #101928;
+  margin: 0;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+}
+
+.table-container {
+  overflow-x: hidden;
+}
+
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+  table-layout: fixed;
+  border: 1px solid #E4E7EC;
+}
+
+.table-header {
+  background-color: #EFF6FF;
+}
+
+.table-header th {
+  padding: 14px 12px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 700;
+  color: #1f2937;
+  border-bottom: 1px solid #E4E7EC;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
+
+.table-row {
+  background-color: #ffffff;
+}
+
+.table-row td {
+  padding: 14px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #101928;
+  border-bottom: 1px solid #E4E7EC;
+  vertical-align: middle;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+
+.checkbox-column {
+  width: 40px;
+  text-align: center;
+}
+
+/* Vertically center checkbox without changing cell layout */
+.task-table th.checkbox-column,
+.task-table td.checkbox-column {
+  position: relative;
+}
+
+.task-table th.checkbox-column .table-checkbox,
+.task-table td.checkbox-column .table-checkbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+.table-checkbox {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid #d1d5db;
+  background-color: #ffffff;
+  cursor: pointer;
+  position: relative;
+}
+
+.table-checkbox:checked {
+  border: none;
+  background-color: transparent;
+  background-image: url("../assets/svg/checktick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.service-name-text {
+  flex: 1;
+  font-size: 13px;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.remarks-input {
+  width: 100%;
+  padding: 6px 8px;
+  border: 2px solid #3b82f6;
+  border-radius: 4px;
+  font-size: 13px;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+  background-color: #ffffff;
+  color: #1f2937;
+  outline: none;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+.remarks-input:focus {
+  border-color: #1d4ed8;
+  /* box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1); */
+}
+
+.remarks-input::placeholder {
+  color: #9ca3af;
+  font-style: italic;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .task-list {
+    margin: 24px 16px;
+  }
+  
+  .task-list-header {
+    padding: 16px 20px;
+  }
+  
+  .table-header th,
+  .table-row td {
+    padding: 10px 6px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .task-list {
+    margin: 16px 8px;
+  }
+  
+  .task-list-header {
+    padding: 12px 16px;
+  }
+  
+  .table-header th,
+  .table-row td {
+    padding: 8px 4px;
+    font-size: 11px;
+  }
+}
+
+.task-table thead th:first-child,
+.task-table tbody td:first-child {
+  padding-left: 24px;
+}
