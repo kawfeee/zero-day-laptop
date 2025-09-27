@@ -3,12 +3,10 @@ import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import EmployeeProfile from "../components/EmployeeProfile";
 import RequiredInfo from "../components/RequiredInfo";
-import EmployeeInformation from "../components/EmployeeInformation";
-import TaskList from "../components/TaskList";
-import ITTaskList from "../components/ITTaskList";
-import ITRemarks from "../components/ITRemarks";
+import ZeroDayEmployeeList from "../components/ZeroDayEmployeeList";
+import WorkflowSections from "../components/WorkflowSections";
 
-const SubmissionBlank = () => {
+const Page3 = () => {
   const employeeData = {
     initials: "MK",
     name: "Manoj Kandan M",
@@ -34,18 +32,13 @@ const SubmissionBlank = () => {
 
         <EmployeeProfile employee={employeeData} />
         <RequiredInfo />
-        {/* Render sections individually to insert IT Remarks below IT Task List */}
-        <div className="main-content-section">
-          <EmployeeInformation readOnly={true} />
-          <TaskList readOnly={true} />
-          <ITTaskList />
-          <ITRemarks />
-        </div>
+        
+        {/* Content below Required Information matching the image */}
+        <ZeroDayEmployeeList />
+        <WorkflowSections />
       </div>
     </>
   );
 };
 
-export default SubmissionBlank;
-
-
+export default Page3;

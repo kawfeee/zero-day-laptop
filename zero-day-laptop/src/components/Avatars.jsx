@@ -75,8 +75,8 @@ const Avatars = () => {
   return (
     <div className="avatars-container">
       <Header
-        breadcrumb="My Workspace > Diversity, Equity & Inclusion Module Training Video"
-        title="SELF Essentials: Diversity, Equity & Inclusion Module - Employee Submission"
+        breadcrumb="My Workspace > Zero Day Laptop"
+        title="Zero Day Laptop - DC Submission"
         onBackClick={handleBackClick}
         onClockClick={handleClockClick}
       />

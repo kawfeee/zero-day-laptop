@@ -45,7 +45,7 @@ const TaskList = ({ readOnly = false }) => {
               <td>[No Prerequisite]</td>
               <td>Verify if all SW are installed</td>
               <td>Check</td>
-              <td>DC: Once IT Closed the New Joiners Checklist WF, </td>
+              <td>DC: Once IT Closed the New Joiners Checklist WF, verify and update checklist in current WF</td>
               <td>
                 {readOnly ? (
                   <span></span>

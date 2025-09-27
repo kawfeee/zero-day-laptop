@@ -2,9 +2,8 @@
   background-color: #F9FAFB;
   border-radius: 8px;
   /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
-  margin: 24px 0;
-  margin-left: 27px; /* align left edge */
-  width: 1392px;     /* requested width */
+  margin: 24px 0;    /* touch main-content-section edges horizontally */
+  width: auto;       /* span available width */
   overflow: hidden;
   opacity: 1;        /* requested opacity */
 }
@@ -82,6 +81,15 @@
 .view-policies .workflow-icon img {
   width: 20px;
   height: 20px;
+}
+
+/* Dedicated wrapper for transfer row to eliminate left gap */
+.transfer-wrapper {
+  margin-left: -24px; /* cancel .workflow-icon default left margin */
+  padding-left: 24px; /* preserve content alignment */
+  border-top-left-radius: 8px;
+  overflow: hidden;
+  background-color: #EFF6FF;
 }
 
 /* Responsive design */

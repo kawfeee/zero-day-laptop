@@ -1,27 +1,28 @@
-import { useEffect, useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar.jsx";
 import Avatars from "./components/Avatars.jsx";
 import SubmissionBlank from "./pages/SubmissionBlank.jsx";
+import Page2 from "./pages/Page2.jsx";
+import Page3 from "./pages/Page3.jsx";
+import Page4 from "./pages/Page4.jsx";
 
 function App() {
-  const [route, setRoute] = useState(window.location.hash || "#/");
-
-  useEffect(() => {
-    const onHashChange = () => setRoute(window.location.hash || "#/");
-    window.addEventListener("hashchange", onHashChange);
-    return () => window.removeEventListener("hashchange", onHashChange);
-  }, []);
-
-  if (route === "#/submitted") {
-    return <SubmissionBlank />;
-  }
-
   return (
-    <>
-      <Navbar />
-      <Avatars />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={
+          <>
+            <Navbar />
+            <Avatars />
+          </>
+        } />
+        <Route path="/submitted" element={<SubmissionBlank />} />
+        <Route path="/2" element={<Page2 />} />
+        <Route path="/3" element={<Page3 />} />
+        <Route path="/4" element={<Page4 />} />
+      </Routes>
+    </Router>
   );
 }
 

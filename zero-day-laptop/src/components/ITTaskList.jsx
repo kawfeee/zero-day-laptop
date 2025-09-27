@@ -23,7 +23,7 @@ const ITTaskList = () => {
       remarks: ""
     },
     {
-      serviceName: "Escort, Nasca, SLAM /Secuprint Registration",
+      serviceName: "Escort, Nasca, SLAM / Secuprint Registration",
       prerequisite: "Corp ID, Knox ID",
       requiredAction: "Default Assignment",
       actionType: "Check",
@@ -41,7 +41,7 @@ const ITTaskList = () => {
       remarks: ""
     },
     {
-      serviceName: "SVPN/VDI &CORP Profile",
+      serviceName: "SVPN/VDI & CORP Profile",
       prerequisite: "Corp ID, Knox ID",
       requiredAction: "Default Assignment",
       actionType: "Check",

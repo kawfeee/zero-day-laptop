@@ -1,0 +1,82 @@
+.it-comments {
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin: 24px 32px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.it-comments-header {
+  background-color: #f8fafc;
+  padding: 20px 24px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+}
+
+.it-comments-content {
+  padding: 20px 24px;
+}
+
+.it-comments-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
+  background-color: #ffffff;
+  color: #374151;
+  outline: none;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+.it-comments-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.it-comments-input::placeholder {
+  color: #9ca3af;
+  font-style: italic;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .it-comments {
+    margin: 24px 16px;
+  }
+  
+  .it-comments-header,
+  .it-comments-content {
+    padding: 16px 20px;
+  }
+  
+  .it-comments-input {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .it-comments {
+    margin: 16px 8px;
+  }
+  
+  .it-comments-header,
+  .it-comments-content {
+    padding: 12px 16px;
+  }
+  
+  .it-comments-input {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+}

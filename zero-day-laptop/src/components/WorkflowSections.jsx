@@ -17,10 +17,12 @@ const WorkflowSections = () => {
 
   return (
     <div className="workflow-sections">
-      <div className="workflow-item transfer-workflow" onClick={handleTransferWorkflow}>
-        <div className="workflow-icon"><img src={transferIcon} alt="Transfer" /></div>
-        <span className="workflow-text">Transfer Workflow</span>
-        <div className="workflow-arrow"><img src={transferArrow} alt="Arrow" /></div>
+      <div className="transfer-wrapper">
+        <div className="workflow-item transfer-workflow" onClick={handleTransferWorkflow}>
+          <div className="workflow-icon"><img src={transferIcon} alt="Transfer" /></div>
+          <span className="workflow-text">Transfer Workflow</span>
+          <div className="workflow-arrow"><img src={transferArrow} alt="Arrow" /></div>
+        </div>
       </div>
 
       <div className="workflow-item view-policies" onClick={handleViewPolicies}>

@@ -7,8 +7,9 @@ import EmployeeInformation from "../components/EmployeeInformation";
 import TaskList from "../components/TaskList";
 import ITTaskList from "../components/ITTaskList";
 import ITRemarks from "../components/ITRemarks";
+import WorkflowSections from "../components/WorkflowSections";
 
-const SubmissionBlank = () => {
+const Page2 = () => {
   const employeeData = {
     initials: "MK",
     name: "Manoj Kandan M",
@@ -34,18 +35,18 @@ const SubmissionBlank = () => {
 
         <EmployeeProfile employee={employeeData} />
         <RequiredInfo />
-        {/* Render sections individually to insert IT Remarks below IT Task List */}
+        
+        {/* Content below Required Information matching the image */}
         <div className="main-content-section">
           <EmployeeInformation readOnly={true} />
           <TaskList readOnly={true} />
           <ITTaskList />
-          <ITRemarks />
+          <ITRemarks text="Check and Verified..." />
+          <WorkflowSections />
         </div>
       </div>
     </>
   );
 };
 
-export default SubmissionBlank;
-
-
+export default Page2;
