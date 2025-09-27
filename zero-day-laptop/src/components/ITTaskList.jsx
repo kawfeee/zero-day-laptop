@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/ITTaskList.css";
 import saveAsDraftIcon from "../assets/svg/save-as-draft.svg";
 
-const ITTaskList = () => {
+const ITTaskList = ({ showSaveAsDraft = true }) => {
   const itTasks = [
     {
       serviceName: "Verify IT Checklist",
@@ -91,7 +91,9 @@ const ITTaskList = () => {
     <div className="it-task-list">
       <div className="it-task-list-header">
         <h2 className="section-title">IT Task List (Status)</h2>
-        <img src={saveAsDraftIcon} alt="Save as Draft" className="save-as-draft-icon" />
+        {showSaveAsDraft && (
+          <img src={saveAsDraftIcon} alt="Save as Draft" className="save-as-draft-icon" />
+        )}
       </div>
       
       <div className="table-container">

@@ -7,7 +7,7 @@ import EmployeeInformation from "../components/EmployeeInformation";
 import TaskList from "../components/TaskList";
 import ITTaskList from "../components/ITTaskList";
 import ITRemarks from "../components/ITRemarks";
-import WorkflowSections from "../components/WorkflowSections";
+import WorkflowSectionsPage2 from "../components/WorkflowSectionsPage2";
 
 const Page2 = () => {
   const employeeData = {
@@ -40,9 +40,9 @@ const Page2 = () => {
         <div className="main-content-section">
           <EmployeeInformation readOnly={true} />
           <TaskList readOnly={true} />
-          <ITTaskList />
+          <ITTaskList showSaveAsDraft={false} />
           <ITRemarks text="Check and Verified..." />
-          <WorkflowSections />
+          <WorkflowSectionsPage2 />
         </div>
       </div>
     </>

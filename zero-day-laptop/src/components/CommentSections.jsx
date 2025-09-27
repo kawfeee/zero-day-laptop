@@ -29,7 +29,7 @@ const CommentSections = () => {
           <textarea
             value={userComment}
             onChange={(e) => setUserComment(e.target.value)}
-            placeholder="XXX-XXX-XX-XXX-X"
+            placeholder="xxx-xxx-xx-xxx-x"
             className="comment-textarea user-comment-textarea"
             rows={4}
             maxLength={500}

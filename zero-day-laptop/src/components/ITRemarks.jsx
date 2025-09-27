@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/ITRemarks.css";
 
-const ITRemarks = ({ text = "Check and Verified..." }) => {
+const ITRemarks = () => {
+  const [remarks, setRemarks] = useState("");
+
+  const handleRemarksChange = (e) => {
+    setRemarks(e.target.value);
+  };
+
   return (
     <div className="it-remarks">
       <div className="it-remarks-title">IT Remarks</div>
-      <div className="it-remarks-box">{text}</div>
+      <textarea
+        className="it-remarks-box"
+        value={remarks}
+        onChange={handleRemarksChange}
+        placeholder="Check and Verified..."
+      />
     </div>
   );
 };

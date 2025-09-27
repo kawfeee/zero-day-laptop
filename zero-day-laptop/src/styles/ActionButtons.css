@@ -30,8 +30,8 @@
   transform: translateY(1px);
 }
 
-.submit-button {
-  background-color: #3b82f6;
+/* .submit-button {
+  background-color: #ffffff;
   color: #ffffff;
   border: 1px solid #3b82f6;
   border-radius: 6px;
@@ -42,17 +42,17 @@
   cursor: pointer;
   transition: all 0.2s ease;
   min-width: 80px;
-}
+} */
 
-.submit-button:hover {
+/* .submit-button:hover {
   background-color: #2563eb;
   border-color: #1d4ed8;
-}
+} */
 
-.submit-button:active {
+/* .submit-button:active {
   background-color: #1d4ed8;
   transform: translateY(1px);
-}
+} */
 
 /* Responsive design */
 @media (max-width: 1200px) {
