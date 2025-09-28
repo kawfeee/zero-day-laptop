@@ -1,6 +1,7 @@
 import React from "react";
+import leftArrow2 from "../assets/svg/left-arrow2.svg";
 import Navbar from "../components/Navbar";
-import Header from "../components/Header";
+import "../styles/Header.css";
 import EmployeeProfile from "../components/EmployeeProfile";
 import RequiredInfo from "../components/RequiredInfo";
 import EmployeeInformation from "../components/EmployeeInformation";
@@ -27,11 +28,18 @@ const Page2 = () => {
     <>
       <Navbar />
       <div className="avatars-container">
-        <Header
-          breadcrumb="My Workspace > Zero Day Laptop"
-          title="Zero Day Laptop - DC Submission"
-          showBackArrow={false}
-        />
+        <div className="header-section">
+          <div className="breadcrumb">My Workspace {">"} Zero Day Laptop</div>
+          <div className="main-header">
+            <button aria-label="Back" onClick={() => window.history.back()} className="back-arrow" style={{ border: "none", background: "transparent", padding: 0, marginRight: 8 }}>
+              <img src={leftArrow2} alt="Back" width={24} height={24} />
+            </button>
+            <div style={{ display: "flex", alignItems: "baseline", gap: "8px" }}>
+              <span style={{ fontSize: 24, fontWeight: 700, color: "#101928" }}>Zero Day Laptop</span>
+              <span style={{ fontSize: 16, fontWeight: 600, color: "#101928" }}>- Report</span>
+            </div>
+          </div>
+        </div>
 
         <EmployeeProfile employee={employeeData} />
         <RequiredInfo />

@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Avatars.css";
-import Header from "./Header";
+import leftArrow2 from "../assets/svg/left-arrow2.svg";
 import EmployeeProfile from "./EmployeeProfile";
 import RequiredInfo from "./RequiredInfo";
 import MainContentSection from "./MainContentSection";
@@ -74,12 +74,17 @@ const Avatars = () => {
 
   return (
     <div className="avatars-container">
-      <Header
-        breadcrumb="My Workspace > Zero Day Laptop"
-        title="Zero Day Laptop - DC Submission"
-        onBackClick={handleBackClick}
-        onClockClick={handleClockClick}
-      />
+
+      <div className="header-section" style={{ marginBottom: 24 }}>
+        <div className="breadcrumb">My Workspace &gt; Zero Day Laptop</div>
+        <div className="main-header" style={{ display: 'flex', alignItems: 'baseline', gap: 8 }}>
+          <button aria-label="Back" onClick={handleBackClick} className="back-arrow" style={{ border: 'none', background: 'transparent', padding: 0, marginRight: 8 ,}}>
+            <img src={leftArrow2} alt="Back" width={24} height={24} />
+          </button>
+          <span style={{ fontSize: 24, fontWeight: 700, color: '#101928' }}>Zero Day Laptop</span>
+          <span style={{ fontSize: 16, fontWeight: 600, color: '#101928' }}>- DC Submission</span>
+        </div>
+      </div>
 
       <EmployeeProfile
         employee={employeeData}
