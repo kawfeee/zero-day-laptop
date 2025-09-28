@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import EmployeeProfile from "../components/EmployeeProfile";
 import RequiredInfo from "../components/RequiredInfo";
 import ZeroDayEmployeeList from "../components/ZeroDayEmployeeList";
-import WorkflowSections from "../components/WorkflowSections";
+import WorkflowSectionsPage2 from "../components/WorkflowSectionsPage2";
 
 const Page3 = () => {
   const employeeData = {
@@ -32,10 +32,12 @@ const Page3 = () => {
 
         <EmployeeProfile employee={employeeData} />
         <RequiredInfo />
-        
-        {/* Content below Required Information matching the image */}
-        <ZeroDayEmployeeList />
-        <WorkflowSections />
+
+        {/* Content below Required Information matching the main page layout */}
+        <div className="main-content-section">
+          <ZeroDayEmployeeList />
+          <WorkflowSectionsPage2 />
+        </div>
       </div>
     </>
   );

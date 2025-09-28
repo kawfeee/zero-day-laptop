@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "../styles/ZeroDayEmployeeList.css";
+import statusSlider from "../assets/svg/status.svg";
 
 const ZeroDayEmployeeList = () => {
-  const [selectedStatus, setSelectedStatus] = useState("Approved");
 
-  const statusOptions = ["Approved", "Pending", "Rejected", "Terminated"];
 
   const employees = [
     {
@@ -77,20 +76,14 @@ const ZeroDayEmployeeList = () => {
       <div className="employee-list-header">
         <h2 className="section-title">Zero Day Employee List</h2>
       </div>
-      
-      <div className="status-filters">
-        <span className="status-label">Status</span>
-        {statusOptions.map((status) => (
-          <button
-            key={status}
-            className={`status-filter ${selectedStatus === status ? 'active' : ''}`}
-            onClick={() => setSelectedStatus(status)}
-          >
-            {status}
-          </button>
-        ))}
+      <div className="status-selector-section">
+        <div className="status-label-row">
+          <span className="status-label">Status <span style={{ color: 'red' }}>*</span></span>
+        </div>
+        <div className="status-slider-row">
+          <img src={statusSlider} alt="Status slider" className="status-slider-img" />
+        </div>
       </div>
-
       <div className="table-container">
         <table className="employee-list-table">
           <thead>

@@ -133,13 +133,6 @@ const ITCheckList = () => {
                 <td>{task.actionType}</td>
                 <td>{task.actionDetails}</td>
                 <td>
-                  <input
-                    type="text"
-                    value={task.remarks}
-                    placeholder=""
-                    className="remarks-input"
-                    readOnly
-                  />
                 </td>
               </tr>
             ))}

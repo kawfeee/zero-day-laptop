@@ -4,9 +4,9 @@ import Header from "../components/Header";
 import EmployeeProfile from "../components/EmployeeProfile";
 import RequiredInfo from "../components/RequiredInfo";
 import ITCheckList from "../components/ITCheckList";
-import ITComments from "../components/ITComments";
-import ActionButtons from "../components/ActionButtons";
-import WorkflowSections from "../components/WorkflowSections";
+import ITCommentsPage4 from "../components/ITCommentsPage4";
+import WorkflowSectionsPage2 from "../components/WorkflowSectionsPage2";
+import "../styles/MainContentSection.css";
 
 const Page4 = () => {
   const employeeData = {
@@ -35,11 +35,12 @@ const Page4 = () => {
         <EmployeeProfile employee={employeeData} />
         <RequiredInfo />
         
-        {/* Content below Required Information matching the image */}
-        <ITCheckList />
-        <ITComments text="Completed" />
-        <ActionButtons />
-        <WorkflowSections />
+        {/* Content below Required Information matching the main page layout */}
+        <div className="main-content-section">
+          <ITCheckList />
+          <ITCommentsPage4 defaultValue="Completed" />
+          <WorkflowSectionsPage2 />
+        </div>
       </div>
     </>
   );

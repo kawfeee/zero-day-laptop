@@ -3,7 +3,7 @@
   border-radius: 8px;
   margin: 24px 32px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .employee-list-header {
@@ -68,6 +68,8 @@
   border-collapse: collapse;
   font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
   table-layout: fixed;
+  border-left: 1px solid #E4E7EC;
+  border-right: 1px solid #E4E7EC;
 }
 
 .table-header {
@@ -87,6 +89,7 @@
   vertical-align: middle;
 }
 
+
 .table-row {
   background-color: #ffffff;
 }
@@ -96,7 +99,8 @@
   font-size: 13px;
   font-weight: 500;
   color: #101928;
-  border-bottom: 1px solid #E4E7EC;
+  border-bottom: none;
+  background-color: #ffffff;
   vertical-align: middle;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -112,23 +116,50 @@
 .it-engineer-link {
   background: none;
   border: none;
-  color: #3b82f6;
+  color: #101928;
   font-size: 13px;
   font-weight: 500;
   font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
   cursor: pointer;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   padding: 0;
 }
 
-.it-engineer-link:hover {
+/* .it-engineer-link:hover {
   color: #1d4ed8;
-}
+} */
 
 /* Extra left gutter to visually match other tables */
 .employee-list-table thead th:first-child,
 .employee-list-table tbody td:first-child {
   padding-left: 24px;
+}
+
+/* Status selector section visually separated from table */
+.status-selector-section {
+  background: #F9FAFB;
+  padding: 18px 24px 18px 24px;
+  /* margin-bottom: 5px; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 0;
+}
+
+.status-label-row {
+  margin-bottom: 8px;
+}
+
+.status-slider-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.status-slider-img {
+  width: 324px;
+  height: 40px;
+  display: block;
 }
 
 /* Responsive design */

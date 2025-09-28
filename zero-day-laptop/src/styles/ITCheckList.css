@@ -3,13 +3,12 @@
   border-radius: 8px;
   margin: 24px 32px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .it-check-list-header {
-  background-color: #f8fafc;
+  background-color: #F9FAFB;
   padding: 20px 24px;
-  border-bottom: 1px solid #e5e7eb;
+  /* border-bottom: 1px solid #e5e7eb; */
 }
 
 .section-title {
@@ -22,6 +21,7 @@
 
 .table-container {
   overflow-x: auto;
+  border: 1px solid #E4E7EC;
 }
 
 .it-check-table {
@@ -69,8 +69,9 @@
 }
 
 .checkbox-column {
-  width: 40px;
-  text-align: center;
+  width: 56px;
+  text-align: left;
+  padding-left: 24px;
 }
 
 .table-checkbox {
@@ -84,6 +85,8 @@
   background-color: #ffffff;
   cursor: pointer;
   position: relative;
+  display: block;
+  margin: 0;
 }
 
 .table-checkbox:checked {
