@@ -6,8 +6,9 @@
 }
 
 .it-check-list-header {
+  margin-top: -25px;
   background-color: #F9FAFB;
-  padding: 20px 24px;
+  padding: 20px 24px 20px 2px;
   /* border-bottom: 1px solid #e5e7eb; */
 }
 

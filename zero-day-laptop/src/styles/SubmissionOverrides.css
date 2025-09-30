@@ -1,0 +1,32 @@
+/* Main page (Submission) specific overrides: widen Action Detail column */
+.main-page .task-table th:nth-child(6),
+.main-page .task-table td:nth-child(6) {
+  width: 28%;
+}
+
+.main-page .task-table th:nth-child(5),
+.main-page .task-table td:nth-child(5) {
+  width: 10%;
+}
+
+.main-page .it-task-table th:nth-child(5),
+.main-page .it-task-table td:nth-child(5) {
+  width: 28%;
+}
+
+.main-page .it-task-table th:nth-child(4),
+.main-page .it-task-table td:nth-child(4) {
+  width: 10%;
+}
+
+/* Ensure Remarks column retains ample width and input doesn't overflow */
+.main-page .task-table th:nth-child(7),
+.main-page .task-table td:nth-child(7) {
+  width: 14%;
+}
+
+.main-page .remarks-input {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
+}

@@ -7,6 +7,7 @@ import EmployeeInformation from "../components/EmployeeInformation";
 import TaskList from "../components/TaskList";
 import ITTaskList from "../components/ITTaskList";
 import ITRemarks from "../components/ITRemarks";
+import "../styles/SubmissionOverrides.css";
 
 const SubmissionBlank = () => {
   const employeeData = {
@@ -25,7 +26,7 @@ const SubmissionBlank = () => {
   return (
     <>
       <Navbar />
-      <div className="avatars-container">
+      <div className="avatars-container main-page">
         <Header
           breadcrumb="My Workspace > Zero Day Laptop"
           title="Zero Day Laptop - DC Submission"

@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Avatars.css";
+import "../styles/SubmissionOverrides.css";
 import leftArrow2 from "../assets/svg/left-arrow2.svg";
 import EmployeeProfile from "./EmployeeProfile";
 import RequiredInfo from "./RequiredInfo";
@@ -73,7 +74,7 @@ const Avatars = () => {
   };
 
   return (
-    <div className="avatars-container">
+    <div className="avatars-container main-page">
 
       <div className="header-section" style={{ marginBottom: 24 }}>
         <div className="breadcrumb">My Workspace &gt; Zero Day Laptop</div>

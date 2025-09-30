@@ -27,6 +27,7 @@
 }
 
 .comment-textarea {
+  height: 60px;
   width: 100%;
   padding: 24px 16px;
   border: 1px solid #d1d5db;

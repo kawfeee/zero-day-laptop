@@ -9,6 +9,7 @@ import TaskList from "../components/TaskList";
 import ITTaskList from "../components/ITTaskList";
 import ITRemarks from "../components/ITRemarks";
 import WorkflowSectionsPage2 from "../components/WorkflowSectionsPage2";
+import "../styles/Page2Overrides.css";
 
 const Page2 = () => {
   const employeeData = {
@@ -27,7 +28,7 @@ const Page2 = () => {
   return (
     <>
       <Navbar />
-      <div className="avatars-container">
+      <div className="avatars-container page2">
         <div className="header-section">
           <div className="breadcrumb">My Workspace {">"} Zero Day Laptop</div>
           <div className="main-header">

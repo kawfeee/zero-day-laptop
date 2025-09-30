@@ -1,0 +1,27 @@
+/* Page 2 specific overrides */
+/* Use tickgray.svg for all checked checkboxes on Page 2 */
+.page2 .table-checkbox:checked {
+  background-image: url("../assets/svg/tickgray.svg") !important;
+}
+
+/* Widen Action Detail column and slightly narrow Action Type so content fits in ~2 lines (TaskList) */
+.page2 .task-table th:nth-child(6),
+.page2 .task-table td:nth-child(6) {
+  width: 28%;
+}
+
+.page2 .task-table th:nth-child(5),
+.page2 .task-table td:nth-child(5) {
+  width: 10%;
+}
+
+/* Widen Action Detail column and slightly narrow Action Type (ITTaskList) */
+.page2 .it-task-table th:nth-child(5),
+.page2 .it-task-table td:nth-child(5) {
+  width: 28%;
+}
+
+.page2 .it-task-table th:nth-child(4),
+.page2 .it-task-table td:nth-child(4) {
+  width: 10%;
+}
