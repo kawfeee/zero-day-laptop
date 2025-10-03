@@ -1,12 +1,20 @@
 import React, { useState } from "react";
 import "../styles/TaskList.css";
 
+
 const TaskList = ({ readOnly = false }) => {
   const [isChecked, setIsChecked] = useState(false);
+  const [allChecked, setAllChecked] = useState(false);
   const [remarks, setRemarks] = useState("");
+
+  const handleHeaderCheckboxChange = () => {
+    setAllChecked(!allChecked);
+    setIsChecked(!allChecked);
+  };
 
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
+    if (allChecked && isChecked) setAllChecked(false);
   };
 
   return (
@@ -20,7 +28,13 @@ const TaskList = ({ readOnly = false }) => {
           <thead>
             <tr className="table-header">
               <th className="checkbox-column">
-                <input type="checkbox" className="table-checkbox" aria-label="Select all tasks" />
+                <input
+                  type="checkbox"
+                  className="table-checkbox"
+                  aria-label="Select all tasks"
+                  checked={allChecked}
+                  onChange={handleHeaderCheckboxChange}
+                />
               </th>
               <th>Service Name</th>
               <th>Prerequisite</th>
@@ -35,7 +49,7 @@ const TaskList = ({ readOnly = false }) => {
               <td className="checkbox-column">
                 <input
                   type="checkbox"
-                  checked={isChecked}
+                  checked={allChecked || isChecked}
                   onChange={handleCheckboxChange}
                   className="table-checkbox"
                   aria-label="Select task Verify IT Checklist"

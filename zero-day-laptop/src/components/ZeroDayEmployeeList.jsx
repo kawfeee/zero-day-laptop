@@ -100,17 +100,17 @@ const ZeroDayEmployeeList = () => {
           <tbody>
             {employees.map((employee, index) => (
               <tr key={index} className="table-row">
-                <td>{employee.gen}</td>
-                <td>{employee.employeeName}</td>
-                <td>{employee.knoxEmail}</td>
-                <td>{employee.joiningDate}</td>
-                <td className="department-cell">{employee.departmentName}</td>
+                <td style={index === 0 ? { color: '#36A8DE' } : {}}>{employee.gen}</td>
+                <td style={index === 0 ? { color: '#36A8DE' } : {}}>{employee.employeeName}</td>
+                <td style={index === 0 ? { color: '#36A8DE' } : {}}>{employee.knoxEmail}</td>
+                <td style={index === 0 ? { color: '#36A8DE' } : {}}>{employee.joiningDate}</td>
+                <td className="department-cell" style={index === 0 ? { color: '#36A8DE' } : {}}>{employee.departmentName}</td>
                 <td>
-                  <button className="it-engineer-link">
+                  <button className="it-engineer-link" style={index === 0 ? { color: '#36A8DE' } : {}}>
                     {employee.itEngineerName}
                   </button>
                 </td>
-                <td>{employee.itSubmissionOn}</td>
+                <td style={index === 0 ? { color: '#36A8DE' } : {}}>{employee.itSubmissionOn}</td>
               </tr>
             ))}
           </tbody>

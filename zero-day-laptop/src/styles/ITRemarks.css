@@ -1,7 +1,7 @@
 .it-remarks { margin: 24px; }
 .it-remarks-title { font-weight: 600; font-size: 14px; color: #101928; margin-bottom: 8px; }
-.it-remarks-box { background: #F3F3F3; border-radius: 8px; padding: 16px; font-size: 14px; color: #475467; width: 1375px; min-height: 90px; border: none; resize: none; outline: none; font-family: inherit; }
+.it-remarks-box { background: #F3F3F3; border-radius: 8px; padding: 16px; font-size: 14px; color: #475467; width: 1375px; height: 90px; border: none; resize: none; outline: none; font-family: inherit;}
 
-.it-remarks-box::placeholder { color: #475467; padding-top: 8px; }
+.it-remarks-box::placeholder { color: #475467; padding-top: 28px; font-weight: 400px;}
 
 

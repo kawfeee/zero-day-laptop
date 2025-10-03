@@ -60,7 +60,7 @@
 .table-row td {
   padding: 14px 12px;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 400;
   color: #101928;
   border-bottom: 1px solid #E4E7EC;
   vertical-align: middle;
@@ -109,7 +109,7 @@
 .remarks-input {
   width: 100%;
   padding: 6px 8px;
-  border: 2px solid #007AFF;
+  border: 1px solid #007AFF;
   border-radius: 1px;
   font-size: 13px;
   font-family: "Samsung InterFace", "Segoe UI", Arial, sans-serif;
@@ -121,8 +121,7 @@
 }
 
 .remarks-input:focus {
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  border-color: #007AFF;
 }
 
 .remarks-input::placeholder {

@@ -55,9 +55,10 @@
 }
 
 .table-row td {
+  height: 48px;
   padding: 14px 12px;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 400;
   color: #101928;
   border-bottom: 1px solid #E4E7EC;
   vertical-align: middle;
@@ -118,7 +119,7 @@
 .remarks-input {
   width: 105%;
   padding: 6px 8px;
-  border: 2px solid #3b82f6;
+  border: 1px solid #007AFF;
   border-radius: 1px;
   height: 40px;
   font-size: 13px;
@@ -131,8 +132,7 @@
 }
 
 .remarks-input:focus {
-  border-color: #1d4ed8;
-  /* box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1); */
+  border-color: #007AFF;
 }
 
 .remarks-input::placeholder {

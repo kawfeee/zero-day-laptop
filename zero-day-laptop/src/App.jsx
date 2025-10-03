@@ -17,10 +17,10 @@ function App() {
             <Avatars />
           </>
         } />
-        <Route path="/submitted" element={<SubmissionBlank />} />
-        <Route path="/2" element={<Page2 />} />
-        <Route path="/3" element={<Page3 />} />
-        <Route path="/4" element={<Page4 />} />
+        <Route path="/" element={<Avatars />} />
+        <Route path="/Report" element={<Page2 />} />
+        <Route path="/Employee-list" element={<Page3 />} />
+        <Route path="/IT-checklist" element={<Page4 />} />
       </Routes>
     </Router>
   );
